@@ -12,12 +12,15 @@ public class PlayerMovement : MonoBehaviour
     CapsuleCollider2D myBodyCollider;
     BoxCollider2D myFeetCollider;
     bool hasDashed = false;
-    bool isPressed = false;
     float gravityScaleAtStart;
-    [SerializeField] float speedScale = 5f;
+    float runSpeed;
+    float currentTime;
+    [SerializeField] float dashCooldown = 5f;
+    [SerializeField] float defaultRunSpeed = 5f;
     [SerializeField] float jumpScale = 5f;
     [SerializeField] float climbScale = 5f;
-    [SerializeField] float dashScale = 100f;
+    [SerializeField] float dashSpeed = 100f;
+    [SerializeField] float dashDuration = 2f;
     [SerializeField] Vector2 deathFling = new Vector2(30f, 20f);
     [SerializeField] GameObject bullet;
     [SerializeField] Transform gun;
@@ -32,6 +35,7 @@ public class PlayerMovement : MonoBehaviour
         myBodyCollider = GetComponent<CapsuleCollider2D>();
         myFeetCollider = GetComponent<BoxCollider2D>();
         gravityScaleAtStart = myRigidBody.gravityScale;
+        runSpeed = defaultRunSpeed;
     }
 
     void Update()
@@ -72,41 +76,33 @@ public class PlayerMovement : MonoBehaviour
     {
         bool playerHasHorizontalSpeed = Mathf.Abs(myRigidBody.velocity.x) > 0.2f;
 
-        if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Water")))
-        {
-            Vector2 playerVelocity = new Vector2((moveInput.x * speedScale) / 1.5f, myRigidBody.velocity.y / 1.1f);
+        
+            Vector2 playerVelocity = new Vector2(moveInput.x * runSpeed, myRigidBody.velocity.y);
             myRigidBody.velocity = playerVelocity;
-        } else {
-            Vector2 playerVelocity = new Vector2(moveInput.x * speedScale, myRigidBody.velocity.y);
-            myRigidBody.velocity = playerVelocity;
-        }
+            Invoke("ReturnToDefaultSpeed", dashDuration);
 
-        if (isPressed)
-        {
-            Vector2 dashVelocity = new Vector2((moveInput.x * dashScale), myRigidBody.velocity.y);
-            myRigidBody.velocity = dashVelocity;
-            hasDashed = true;
-            isPressed = false;
-        } else if (hasDashed){
-            Vector2 playerVelocity = new Vector2(moveInput.x * speedScale, myRigidBody.velocity.y);
-            myRigidBody.velocity = playerVelocity;
-            hasDashed = false;
-        }
-
-        if (playerHasHorizontalSpeed)
-        {
-            myAnimator.SetBool("isRunning", true);
-        } else {
-            myAnimator.SetBool("isRunning", false);
-        }
+        // if (playerHasHorizontalSpeed)
+        // {
+        //     // myAnimator.SetBool("isRunning", true);
+        // } else {
+        //     // myAnimator.SetBool("isRunning", false);
+        // }
     }
 
     void OnDash(InputValue value)
     {
-        if (value.isPressed)
+        if (Time.time > dashCooldown)
         {
-            isPressed = true;
+            runSpeed = dashSpeed;
+            dashCooldown = Time.time + 5;
         }
+    }
+
+    void ReturnToDefaultSpeed()
+    {
+        runSpeed = defaultRunSpeed;
+
+        CancelInvoke("ReturnToDefaultSpeed");
     }
 
     void OnJump(InputValue value)
@@ -139,7 +135,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (playerHasHorizontalSpeed)
         {
-            transform.localScale = new Vector2 (Mathf.Sign(myRigidBody.velocity.x), 1f);
+            transform.localScale = new Vector2 (Mathf.Sign(myRigidBody.velocity.x) * .3f, .3f);
         }
     }
 
@@ -152,10 +148,10 @@ public class PlayerMovement : MonoBehaviour
             Vector2 climbingVelocity = new Vector2(myRigidBody.velocity.x, moveInput.y * climbScale);
             myRigidBody.velocity = climbingVelocity;
             myRigidBody.gravityScale = 0f;
-            myAnimator.SetBool("isClimbing", playerHasVerticalSpeed);
+            // myAnimator.SetBool("isClimbing", playerHasVerticalSpeed);
         } else {
             myRigidBody.gravityScale = gravityScaleAtStart;
-            myAnimator.SetBool("isClimbing", false);
+            // myAnimator.SetBool("isClimbing", false);
             return;
         }
     }

@@ -9,11 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7099458095614403211}
+  - component: {fileID: 6072175955983057104}
   - component: {fileID: 7982219379111770452}
   - component: {fileID: 277084386466059842}
   - component: {fileID: 1824554381477658551}
   - component: {fileID: 6255520395523946943}
-  - component: {fileID: 6072175955983057104}
   - component: {fileID: 1874356698}
   m_Layer: 6
   m_Name: Player
@@ -37,6 +37,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6072175955983057104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320493707209209664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa82ced2b48d5094787676be1ffc28ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedScale: 5
+  jumpScale: 5
+  climbScale: 5
+  dashScale: 100
+  deathFling: {x: 30, y: 20}
+  bullet: {fileID: 0}
+  gun: {fileID: 0}
 --- !u!212 &7982219379111770452
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -196,25 +215,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &6072175955983057104
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 320493707209209664}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa82ced2b48d5094787676be1ffc28ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speedScale: 5
-  jumpScale: 5
-  climbScale: 5
-  dashScale: 100
-  deathFling: {x: 30, y: 20}
-  bullet: {fileID: 0}
-  gun: {fileID: 0}
 --- !u!114 &1874356698
 MonoBehaviour:
   m_ObjectHideFlags: 0

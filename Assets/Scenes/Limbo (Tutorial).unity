@@ -366,7 +366,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 2.7323768
+  orthographic size: 5.88
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -572,7 +572,7 @@ MonoBehaviour:
   m_Follow: {fileID: 1874356703}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 2.7323768
+    OrthographicSize: 5.88
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -751,7 +751,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0.012000024, y: 0.012000024, z: 0}
+  m_ChunkCullingBounds: {x: 0.03333336, y: 0.03333336, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -2265,7 +2265,7 @@ CompositeCollider2D:
   m_GameObject: {fileID: 1310630375}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: b9f460729dc34514d90f465107477580, type: 2}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -3314,7 +3314,7 @@ CompositeCollider2D:
   m_GameObject: {fileID: 1797924575}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: b9f460729dc34514d90f465107477580, type: 2}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -4250,7 +4250,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0.012000024, y: 0.012000024, z: 0}
+  m_ChunkCullingBounds: {x: 0.03333336, y: 0.03333336, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -4877,6 +4877,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1874356698, guid: 321607022d986d4488fbee4f92fccc01, type: 3}
+      propertyPath: m_NotificationBehavior
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 277084386466059842, guid: 321607022d986d4488fbee4f92fccc01, type: 3}
       propertyPath: m_Size.y
       value: 3.1316972
@@ -4906,8 +4910,20 @@ PrefabInstance:
       value: -1.4200594
       objectReference: {fileID: 0}
     - target: {fileID: 6072175955983057104, guid: 321607022d986d4488fbee4f92fccc01, type: 3}
+      propertyPath: dashSpeed
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6072175955983057104, guid: 321607022d986d4488fbee4f92fccc01, type: 3}
       propertyPath: jumpScale
-      value: 10
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 6072175955983057104, guid: 321607022d986d4488fbee4f92fccc01, type: 3}
+      propertyPath: dashCooldown
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6072175955983057104, guid: 321607022d986d4488fbee4f92fccc01, type: 3}
+      propertyPath: dashDuration
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6255520395523946943, guid: 321607022d986d4488fbee4f92fccc01, type: 3}
       propertyPath: m_GravityScale
