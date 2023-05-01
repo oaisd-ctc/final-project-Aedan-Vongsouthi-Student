@@ -15,7 +15,8 @@ public class PlayerMovement : MonoBehaviour
     float gravityScaleAtStart;
     float runSpeed;
     float currentTime;
-    [SerializeField] float dashCooldown = 5f;
+    float dashStart = 0f;
+    [SerializeField] float dashCooldown = 2f;
     [SerializeField] float defaultRunSpeed = 5f;
     [SerializeField] float jumpScale = 5f;
     [SerializeField] float climbScale = 5f;
@@ -91,10 +92,10 @@ public class PlayerMovement : MonoBehaviour
 
     void OnDash(InputValue value)
     {
-        if (Time.time > dashCooldown)
+        if (Time.time > dashStart + dashCooldown)
         {
             runSpeed = dashSpeed;
-            dashCooldown = Time.time + 5;
+            dashStart = Time.time;
         }
     }
 

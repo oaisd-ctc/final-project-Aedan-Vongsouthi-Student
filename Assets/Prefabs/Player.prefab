@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2002131407
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2002131408}
+  m_Layer: 0
+  m_Name: Gun
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2002131408
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002131407}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.8000007, y: -0.68, z: 4.48613}
+  m_LocalScale: {x: 3.333333, y: 3.333333, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7099458095614403211}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &320493707209209664
 GameObject:
   m_ObjectHideFlags: 0
@@ -31,11 +62,12 @@ Transform:
   m_GameObject: {fileID: 320493707209209664}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.29, y: -0.12, z: -4.436903}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2002131408}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6072175955983057104
 MonoBehaviour:
@@ -49,13 +81,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa82ced2b48d5094787676be1ffc28ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedScale: 5
-  jumpScale: 5
+  dashCooldown: 2
+  defaultRunSpeed: 5
+  jumpScale: 14
   climbScale: 5
-  dashScale: 100
+  dashSpeed: 12
+  dashDuration: 0.5
   deathFling: {x: 30, y: 20}
   bullet: {fileID: 0}
-  gun: {fileID: 0}
+  gun: {fileID: 2002131408}
 --- !u!212 &7982219379111770452
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -140,8 +174,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.19303441}
-  m_Size: {x: 2.3, y: 2.8067784}
+  m_Offset: {x: 0, y: 0.030575592}
+  m_Size: {x: 2.3, y: 3.1316972}
   m_Direction: 0
 --- !u!61 &1824554381477658551
 BoxCollider2D:
@@ -175,7 +209,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -1.3736421}
+  m_Offset: {x: -0.011600614, y: -1.4200594}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -186,7 +220,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.3, y: 0.45836377}
+  m_Size: {x: 1.7429988, y: 0.34232187}
   m_EdgeRadius: 0
 --- !u!50 &6255520395523946943
 Rigidbody2D:
@@ -203,7 +237,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
