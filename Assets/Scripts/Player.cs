@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
-public class PlayerMovement : MonoBehaviour
+public class Player : MonoBehaviour
 {
     Vector2 moveInput;
     Rigidbody2D myRigidBody;
@@ -23,11 +23,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float dashSpeed = 100f;
     [SerializeField] float dashDuration = 2f;
     [SerializeField] Vector2 deathFling = new Vector2(30f, 20f);
-    [SerializeField] GameObject bullet;
-    [SerializeField] Transform gun;
 
 
-    bool isAlive = true;
+    public bool isAlive = true;
 
     void Start()
     {
@@ -47,16 +45,6 @@ public class PlayerMovement : MonoBehaviour
             FlipSprite();
             ClimbLadder();
             PlayerDeath();
-        } else {
-            return;
-        }
-    }
-
-    void OnFire(InputValue value)
-    {
-        if(isAlive)
-        {
-            Instantiate(bullet, gun.position, transform.rotation);
         } else {
             return;
         }

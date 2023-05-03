@@ -6,13 +6,13 @@ public class BulletMovement : MonoBehaviour
 {
     Rigidbody2D bulletRigidBody;
     [SerializeField] float bulletSpeed = 20f;
-    PlayerMovement player;
+    Player player;
     float xspeed;
 
     void Start()
     {
         bulletRigidBody = GetComponent<Rigidbody2D>();
-        player = FindObjectOfType<PlayerMovement>();
+        player = FindObjectOfType<Player>();
         xspeed = player.transform.localScale.x * bulletSpeed;
     }
 
@@ -35,4 +35,5 @@ public class BulletMovement : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
 }
