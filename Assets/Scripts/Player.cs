@@ -124,7 +124,7 @@ public class Player : MonoBehaviour
 
         if (playerHasHorizontalSpeed)
         {
-            transform.localScale = new Vector2 (Mathf.Sign(myRigidBody.velocity.x) * .3f, .3f);
+            transform.localScale = new Vector2 (Mathf.Sign(myRigidBody.velocity.x), 1f);
         }
     }
 

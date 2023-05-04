@@ -10,7 +10,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] Transform gun;
     [SerializeField] public float offset;
     [SerializeField] public int amountOfBullets;
-    [SerializeField] public float spread, bulletspeed;
+    [SerializeField] public float spread;
     
     void Awake() 
     {
@@ -23,42 +23,20 @@ public class Weapon : MonoBehaviour
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.AngleAxis(angle + offset, Vector3.forward);
-    }
-
-    void OnFire(InputValue value)
-    {
-        if(player.isAlive)
+        if (Input.GetMouseButtonDown(0))
         {
             Shoot();
-        } else {
-            return;
         }
     }
+
 
     void Shoot()
     {
         for (int i = 0; i < amountOfBullets; i++)
             {
-               GameObject b = Instantiate(bullet, gun.position, transform.rotation);
-               Rigidbody2D brb = b.GetComponent<Rigidbody2D>();
-               Vector2 dir = transform.rotation * Vector2.up;
-               Vector2 pdir = Vector2.Perpendicular(dir) * Random.Range(-spread, spread);
-               brb.velocity = (dir * pdir) * bulletspeed;
+              
+               Instantiate(bullet, gun.position, new Quaternion (5f, 5f, 0f, 10f));
+               
             } 
-    }
-
-    void OnTriggerEnter2D(Collider2D other) 
-    {
-        if (other.tag == "Enemy")
-        {
-            Destroy(other.gameObject);
-        }
-
-        Destroy(gameObject);
-    }
-
-    void OnCollisionEnter2D(Collision2D other) 
-    {
-        Destroy(gameObject);
     }
 }
