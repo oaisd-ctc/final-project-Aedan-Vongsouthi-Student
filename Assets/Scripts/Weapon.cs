@@ -10,15 +10,15 @@ public class Weapon : MonoBehaviour
     [SerializeField] Transform gun;
     [SerializeField] public float offset;
     [SerializeField] public int amountOfBullets;
-    [SerializeField] public float spread;
     
-    void Awake() 
+    public void Awake() 
     {
         Transform parent = gameObject.transform.parent;
         player = parent.gameObject.GetComponent<Player>();
+
     }
 
-    private void Update() 
+    public void Update() 
     {
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
@@ -30,12 +30,15 @@ public class Weapon : MonoBehaviour
     }
 
 
-    void Shoot()
+    public void Shoot()
     {
+        
         for (int i = 0; i < amountOfBullets; i++)
             {
-              
-               Instantiate(bullet, gun.position, new Quaternion (5f, 5f, 0f, 10f));
+                float ySpread = 2f;
+                Vector3 bulletSpread = new Vector3(0f, ySpread , 0f);
+                Instantiate(bullet, gun.position + bulletSpread, transform.rotation);
+                ySpread += 2f;
                
             } 
     }
