@@ -38,8 +38,7 @@ public class Weapon : MonoBehaviour
                 float ySpread = 2f;
                 Vector3 bulletSpread = new Vector3(0f, ySpread , 0f);
                 Instantiate(bullet, gun.position + bulletSpread, transform.rotation);
-                ySpread += 2f;
-               
+                ySpread++;
             } 
     }
 }
