@@ -1,0 +1,2360 @@
+fileFormatVersion: 2
+guid: 0cb3013a01f371d46b3a3bae4138ab02
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 100
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 289
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 837eb6e46f126ef40ad8e95f014b24c6
+      internalID: -375563410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 289
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eeffec87a69ce249ade8950e46b1c19
+      internalID: 1301476001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 289
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1f3327c8177a024c959251961f3ec31
+      internalID: 95734798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 289
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93ba801055493e34885f6b9682a07671
+      internalID: 354954928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 289
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b784886e05340c42b858239483db1d0
+      internalID: -78705271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 289
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7df0651083fd1c247baf55bf6aa2e79f
+      internalID: 1887899558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 289
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 772f50c7666e1b2418a1bb578f9a6956
+      internalID: -1816102768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 289
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce3637b16cc6cd14ea01fe8cb0dee693
+      internalID: 687535783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 289
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1006fab08507d3e4ea39ddad6d754295
+      internalID: -1978009435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 289
+        width: 28
+        height: 30
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c79a64172ed6eb478727df92daecc4a
+      internalID: -2024518562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 257
+        width: 28
+        height: 30
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db58290e471a9ce47903de07368d61e5
+      internalID: -1215692443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 257
+        width: 28
+        height: 30
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eabd88aab542f0c45a129f461a0a45bf
+      internalID: -2071742147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_12
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 257
+        width: 28
+        height: 30
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 139e1a665c5431e4885377543b7a19a7
+      internalID: -192122461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_13
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 257
+        width: 28
+        height: 30
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86d0546026bebde489b9bcfcaaf9bc41
+      internalID: -826503464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_14
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 257
+        width: 28
+        height: 30
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a1ac1aaf9c25ba41b5264daefc7d2e8
+      internalID: -1630708380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_15
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 257
+        width: 28
+        height: 30
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1259b7c090320c48b3edd3b4f8c0f73
+      internalID: -1289806453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_16
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 257
+        width: 28
+        height: 30
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edc68e31d87bc7241a695d8f9acf8b20
+      internalID: 1177971007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_17
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 257
+        width: 28
+        height: 30
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17bd06826dac0364fbe5c9713cc2d5e7
+      internalID: -1013480365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_18
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 257
+        width: 28
+        height: 30
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9f7021af8093ca49936ea873786aca7
+      internalID: -1300177675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_19
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 257
+        width: 28
+        height: 30
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9458bd35707b455448f4d0941f9de862
+      internalID: 1456094023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 225
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6c2e26ec69aa9e4f9eb59f61560dc0a
+      internalID: 331589060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_21
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 225
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ecb114225b8d7b4ebad1147f8bbd4e1
+      internalID: 947321772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_22
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 225
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfb1c1a504775d64b8e08cf6e87da98b
+      internalID: -613824648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_23
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 225
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05f31e6f9e7fe5243adf8d2db1ee8927
+      internalID: -1294220075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_24
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 225
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d1887c7a1ceef24c93ffd340ce0dc7d
+      internalID: -159181039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_25
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 225
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f931fa49aa822e48bc8b131e052ee21
+      internalID: 512472407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_26
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 225
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba3c3c78fefcc648a12ac582f31ed57
+      internalID: -1146593998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_27
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 225
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12f64b1ffb2942d4aa246c1e52038cfb
+      internalID: 316186085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_28
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 225
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32b8b9bdddead104186bb2de6c411b85
+      internalID: -1296204943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_29
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 225
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e69fffc8443c443b8ba4f5bf4df7d4
+      internalID: 868354506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 193
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 771da7af4f1e6134e8e94e60200290de
+      internalID: 12984283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_31
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 193
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d995a1c7edb6b8498a06607438cfc57
+      internalID: 118735590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_32
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 193
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e8dfd1c517dbf9468d52aedb335cef4
+      internalID: 1448981437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_33
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 193
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 977df854691892141adf132590185cd0
+      internalID: -1002740681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_34
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 193
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f951d784e0b77d045b66ba0ca41c60e5
+      internalID: -1399455722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_35
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 193
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f68525260f040f14ca37487ef343cc65
+      internalID: 1356188768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_36
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 193
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff9068a9de791674dbf33bf125c260d7
+      internalID: 110663853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_37
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 193
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bebdccbb509d27546a42306b9ed7424e
+      internalID: -329257955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_38
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 193
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e6e880f10e7def4298a95c0cd8696fb
+      internalID: 1036022102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_39
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 193
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b524b41201e29842aa562dea19a951c
+      internalID: -1311124437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 161
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f44e4f023b285a14da077a3633c746dd
+      internalID: 1792673930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_41
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 161
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e55d838b130f3ca45a116268098c6294
+      internalID: -254677690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_42
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 161
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c75798e432d524744b337603bb491cf5
+      internalID: -1262658160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_43
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 161
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39d31c012cc40f444984a680cbdaddf8
+      internalID: 673098845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_44
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 161
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed1751613d32ac546a8c8b973c1b9903
+      internalID: 1153635592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_45
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 161
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcaddc18390a6cd44b5a8ca0e1f85b3e
+      internalID: 1134855974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_46
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 161
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e82627d3695db44cb026dca47cef8f0
+      internalID: 1975070318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_47
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 161
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c570bcee34cb684fa08b3353e9336db
+      internalID: 1250635932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_48
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 161
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5ab004590ad4a240be9439fcf7eb689
+      internalID: 1608979270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_49
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 161
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 370b28d80e915bb4ba18b8b5e8b48628
+      internalID: 1673705582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 129
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26bf9d79a9415ab4c8c165c821d23e4e
+      internalID: 1767660654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_51
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 129
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 877849fcba51066479d4e37f94198df6
+      internalID: -95557303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_52
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 129
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f8146137f4bdb94db1e522063fa3e35
+      internalID: 212506337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_53
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 129
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a5a465b8982dbf468a76fe462d03c1e
+      internalID: 548112810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_54
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 129
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12719be9fa17a92478bfaa913e0fdaf1
+      internalID: -2123340006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_55
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 129
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6edb727f8b99edf499b23f2f288b128d
+      internalID: 1657729753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_56
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 129
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a89d24717d47dbf4b9f3077d2697b5bb
+      internalID: -99722720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_57
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 129
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a014cc291771b52479bf02be129aec2d
+      internalID: 1810646625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_58
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 129
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f666fe3b8452fa46a8f1e6c74eadd4d
+      internalID: -1246953019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_59
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 129
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a37a586d7a246049860616afebfe25d
+      internalID: 1275301129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 97
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bb630033cf37404796cea0ca71d77ea
+      internalID: 2139379523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_61
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 97
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94a1dfb4b92928f4d86c914c4b5bb8f1
+      internalID: 490716331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_62
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 97
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87ad7b1f2f8ce9a4da1ab9c36516d001
+      internalID: -2078389035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_63
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 97
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c490d45709022b54c958cb551fbbcd4b
+      internalID: -413083983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_64
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 97
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17125b4cee8562a4e8983b8c78fd0aa3
+      internalID: 1276458850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_65
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 97
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcbfc17e7b9a5494fbeb88ce62249261
+      internalID: -949315463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_66
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 97
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd7f4c89b269f014aaacd70937a18adc
+      internalID: -1868819634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_67
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 97
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19bd477aeb8228146be3701a20b6c24e
+      internalID: 858445567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_68
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 97
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f03320b698b7874d8a5fc605d5d5c1a
+      internalID: -536238514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_69
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 97
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d368382ecab51fd42b4469f84ccfd079
+      internalID: -1372328733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 65
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 151728c67383b754c84042fec0147042
+      internalID: 615999834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_71
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 65
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f7667cc46d034d46a0aea6f3e649a80
+      internalID: -846500056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_72
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 65
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9402c8c990c8ab43bc2878c17c7eddd
+      internalID: 223115404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_73
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 65
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaa38a02111d48e4495ccb9dc5693f8c
+      internalID: -2103940357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_74
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 65
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b8bed482de8bab4cbe907b8f5923588
+      internalID: 756119327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_75
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 65
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd3b6cf27813b3245a6b4f2929ba9c1d
+      internalID: -1819339083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_76
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 65
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2677251f50f97454f83e05eb37f3e55b
+      internalID: 651140799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_77
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 65
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bc75a31036d48649a9c8e2c21f9b869
+      internalID: 1872987079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_78
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 65
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fef4d459210b2be45b34a3f977c74a77
+      internalID: 1728658015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_79
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 65
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11070113c88c9424aa36d3b284b8bd6f
+      internalID: -324321405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 33
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b59498578fabdc94a996d65743ad6923
+      internalID: -1637253479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_81
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 33
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e10dec8a04668b4f922c97a8ab9c1c3
+      internalID: -842095123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_82
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 33
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fd0ffc6b7f94b34e87b0490c43cfca2
+      internalID: 23601258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_83
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 33
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97c22aff4febea041ac78518cd52102f
+      internalID: 826668752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_84
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 33
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b4cd05b5b3c0ea46b6ae36e8aebe646
+      internalID: -460089032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_85
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 33
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66c8a965d41a5e5478a92285d631ae9f
+      internalID: 278030701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_86
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 33
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35c20fc4f1a23564db68a33ffabaef05
+      internalID: 1224773022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_87
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 33
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 442baadedf90f0b42b0fb36f5ec66c3d
+      internalID: 1542512254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_88
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 33
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff139b7597cfb16489ee4985132b8d00
+      internalID: -914255005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_89
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 33
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdd9d492932b1f2418324d713a3af7db
+      internalID: -1475424988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2257e8b55046f6346aea449ad2fe26ce
+      internalID: -137729732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_91
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6e9633af7591dd45bb95f4bdb4e5646
+      internalID: 212438428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_92
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd43e7dbf62762240b04731236598e57
+      internalID: -1419143947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_93
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d558c1e995894f4d948ab6f8cf574a0
+      internalID: 1804808184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_94
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26d4f42b357be4244b488bca7b0ad647
+      internalID: 815295002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_95
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cda6ab36b028ff41a5a0a22bd28f65e
+      internalID: -309029739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_96
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b63ab85e74fab142a31362e87b809c3
+      internalID: 1141153956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_97
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 1
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0d79577a73514a4cb949baee2ca5c3d
+      internalID: -466920966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_98
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef6ea2325a6a56142bd3420f1af69705
+      internalID: -1848948880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleric spritesheet calciumtrice_99
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efa607aec6e0ebc449b24293e9e5ce5c
+      internalID: 1530415616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      cleric spritesheet calciumtrice_15: -1289806453
+      cleric spritesheet calciumtrice_42: -1262658160
+      cleric spritesheet calciumtrice_55: 1657729753
+      cleric spritesheet calciumtrice_68: -536238514
+      cleric spritesheet calciumtrice_10: -1215692443
+      cleric spritesheet calciumtrice_41: -254677690
+      cleric spritesheet calciumtrice_12: -192122461
+      cleric spritesheet calciumtrice_6: -1816102768
+      cleric spritesheet calciumtrice_28: -1296204943
+      cleric spritesheet calciumtrice_93: 1804808184
+      cleric spritesheet calciumtrice_44: 1153635592
+      cleric spritesheet calciumtrice_85: 278030701
+      cleric spritesheet calciumtrice_62: -2078389035
+      cleric spritesheet calciumtrice_70: 615999834
+      cleric spritesheet calciumtrice_14: -1630708380
+      cleric spritesheet calciumtrice_54: -2123340006
+      cleric spritesheet calciumtrice_96: 1141153956
+      cleric spritesheet calciumtrice_36: 110663853
+      cleric spritesheet calciumtrice_17: -1013480365
+      cleric spritesheet calciumtrice_80: -1637253479
+      cleric spritesheet calciumtrice_60: 2139379523
+      cleric spritesheet calciumtrice_4: -78705271
+      cleric spritesheet calciumtrice_22: -613824648
+      cleric spritesheet calciumtrice_7: 687535783
+      cleric spritesheet calciumtrice_32: 1448981437
+      cleric spritesheet calciumtrice_71: -846500056
+      cleric spritesheet calciumtrice_27: 316186085
+      cleric spritesheet calciumtrice_2: 95734798
+      cleric spritesheet calciumtrice_9: -2024518562
+      cleric spritesheet calciumtrice_58: -1246953019
+      cleric spritesheet calciumtrice_13: -826503464
+      cleric spritesheet calciumtrice_64: 1276458850
+      cleric spritesheet calciumtrice_39: -1311124437
+      cleric spritesheet calciumtrice_52: 212506337
+      cleric spritesheet calciumtrice_73: -2103940357
+      cleric spritesheet calciumtrice_94: 815295002
+      cleric spritesheet calciumtrice_8: -1978009435
+      cleric spritesheet calciumtrice_47: 1250635932
+      cleric spritesheet calciumtrice_49: 1673705582
+      cleric spritesheet calciumtrice_46: 1975070318
+      cleric spritesheet calciumtrice_77: 1872987079
+      cleric spritesheet calciumtrice_78: 1728658015
+      cleric spritesheet calciumtrice_91: 212438428
+      cleric spritesheet calciumtrice_5: 1887899558
+      cleric spritesheet calciumtrice_74: 756119327
+      cleric spritesheet calciumtrice_72: 223115404
+      cleric spritesheet calciumtrice_23: -1294220075
+      cleric spritesheet calciumtrice_48: 1608979270
+      cleric spritesheet calciumtrice_88: -914255005
+      cleric spritesheet calciumtrice_43: 673098845
+      cleric spritesheet calciumtrice_16: 1177971007
+      cleric spritesheet calciumtrice_19: 1456094023
+      cleric spritesheet calciumtrice_11: -2071742147
+      cleric spritesheet calciumtrice_92: -1419143947
+      cleric spritesheet calciumtrice_20: 331589060
+      cleric spritesheet calciumtrice_79: -324321405
+      cleric spritesheet calciumtrice_61: 490716331
+      cleric spritesheet calciumtrice_21: 947321772
+      cleric spritesheet calciumtrice_45: 1134855974
+      cleric spritesheet calciumtrice_95: -309029739
+      cleric spritesheet calciumtrice_63: -413083983
+      cleric spritesheet calciumtrice_18: -1300177675
+      cleric spritesheet calciumtrice_0: -375563410
+      cleric spritesheet calciumtrice_37: -329257955
+      cleric spritesheet calciumtrice_53: 548112810
+      cleric spritesheet calciumtrice_99: 1530415616
+      cleric spritesheet calciumtrice_33: -1002740681
+      cleric spritesheet calciumtrice_86: 1224773022
+      cleric spritesheet calciumtrice_30: 12984283
+      cleric spritesheet calciumtrice_25: 512472407
+      cleric spritesheet calciumtrice_34: -1399455722
+      cleric spritesheet calciumtrice_83: 826668752
+      cleric spritesheet calciumtrice_98: -1848948880
+      cleric spritesheet calciumtrice_66: -1868819634
+      cleric spritesheet calciumtrice_81: -842095123
+      cleric spritesheet calciumtrice_35: 1356188768
+      cleric spritesheet calciumtrice_50: 1767660654
+      cleric spritesheet calciumtrice_67: 858445567
+      cleric spritesheet calciumtrice_1: 1301476001
+      cleric spritesheet calciumtrice_26: -1146593998
+      cleric spritesheet calciumtrice_3: 354954928
+      cleric spritesheet calciumtrice_65: -949315463
+      cleric spritesheet calciumtrice_82: 23601258
+      cleric spritesheet calciumtrice_75: -1819339083
+      cleric spritesheet calciumtrice_31: 118735590
+      cleric spritesheet calciumtrice_89: -1475424988
+      cleric spritesheet calciumtrice_97: -466920966
+      cleric spritesheet calciumtrice_69: -1372328733
+      cleric spritesheet calciumtrice_38: 1036022102
+      cleric spritesheet calciumtrice_24: -159181039
+      cleric spritesheet calciumtrice_76: 651140799
+      cleric spritesheet calciumtrice_51: -95557303
+      cleric spritesheet calciumtrice_56: -99722720
+      cleric spritesheet calciumtrice_29: 868354506
+      cleric spritesheet calciumtrice_57: 1810646625
+      cleric spritesheet calciumtrice_84: -460089032
+      cleric spritesheet calciumtrice_40: 1792673930
+      cleric spritesheet calciumtrice_90: -137729732
+      cleric spritesheet calciumtrice_87: 1542512254
+      cleric spritesheet calciumtrice_59: 1275301129
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

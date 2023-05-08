@@ -14,8 +14,8 @@ TagManager:
   - Player
   - Ground
   - Bullet
-  - 
-  - 
+  - Background
+  - NPC
   - 
   - 
   - 
@@ -40,6 +40,15 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 2397029765
+    locked: 0
+  - name: Platforms
+    uniqueID: 2035936169
+    locked: 0
+  - name: In-World Text
+    uniqueID: 2763754877
     locked: 0
   - name: Player
     uniqueID: 3116641507

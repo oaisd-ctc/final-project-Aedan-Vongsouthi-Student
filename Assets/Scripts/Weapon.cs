@@ -47,8 +47,8 @@ public class Weapon : MonoBehaviour
         foreach (Quaternion quat in bullets.ToList())
         {
             bullets[i] = Random.rotation;
-            GameObject b = Instantiate(bullet, gun.position, gun.rotation);
-            b.transform.rotation = Quaternion.LookRotation(b.transform.rotation, bullets[i]);
+            GameObject b = Instantiate(bullet, gun.position, bullets[i]);
+            b.transform.rotation = Quaternion.RotateTowards(b.transform.rotation, bullets[i], spreadAngle);
             b.GetComponent<Rigidbody2D>().AddForce(b.transform.right * bulletSpeed);
             i++;
         }
