@@ -11,7 +11,6 @@ public class Player : MonoBehaviour
     Animator myAnimator;
     CapsuleCollider2D myBodyCollider;
     BoxCollider2D myFeetCollider;
-    bool hasDashed = false;
     float gravityScaleAtStart;
     float runSpeed;
     float currentTime;
