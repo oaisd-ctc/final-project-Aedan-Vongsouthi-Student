@@ -5,26 +5,35 @@ using TMPro;
 
 public class TextFadeIn : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Awake()
+    [SerializeField] TMP_Text textmeshPro;
+    byte alpha;
+    public void Start()
     {
-        TextMeshPro textmeshPro = GetComponent<TextMeshPro>();
+        textmeshPro = GetComponent<TMP_Text>();
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
-        
+        if (Input.GetKeyDown("f"))
+        {
+            StartCoroutine("Fade");
+        } 
+
+        if (alpha <= 0)
+        {
+            StopCoroutine("Fade");
+        }
     }
 
     IEnumerator Fade()
     {
-        Color c = GetComponent<Renderer>().material.color;
-        for (float alpha = 1f; alpha >= 0; alpha -= 0.1f)
+        for (alpha = 255; alpha >= 0; alpha--)
         {
-            c.a = alpha;
-            GetComponent<Renderer>().material.color = c;
+            textmeshPro.color = new Color32(255,255,255, alpha);
+            Debug.Log(alpha);
             yield return null;
         }
+
     }
 }

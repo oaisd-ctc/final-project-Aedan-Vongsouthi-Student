@@ -391,7 +391,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.86, y: -0.82, z: -14.436903}
+  m_LocalPosition: {x: 11.14, y: -0.22, z: -14.436903}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -534,6 +534,35 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &591609222 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 945937285, guid: 7e7b56286216df04a98d4bc0614dda3e, type: 3}
+  m_PrefabInstance: {fileID: 8221929370455237853}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &591609225 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 945937287, guid: 7e7b56286216df04a98d4bc0614dda3e, type: 3}
+  m_PrefabInstance: {fileID: 8221929370455237853}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 591609222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &591609227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 591609222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e73575d20ee9a72419653aabaa059db7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textmeshPro: {fileID: 591609225}
 --- !u!1 &892472606
 GameObject:
   m_ObjectHideFlags: 0
@@ -598,7 +627,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 892472606}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.86, y: -0.82, z: -14.436903}
+  m_LocalPosition: {x: 11.14, y: -0.22, z: -14.436903}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -752,7 +781,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1098194462}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.35, y: 0.87, z: 0}
+  m_LocalPosition: {x: 19.35, y: 0.41, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -67831,11 +67860,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7099458095614403211, guid: 321607022d986d4488fbee4f92fccc01, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.86
+      value: 11.14
       objectReference: {fileID: 0}
     - target: {fileID: 7099458095614403211, guid: 321607022d986d4488fbee4f92fccc01, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.82
+      value: -0.22
       objectReference: {fileID: 0}
     - target: {fileID: 7099458095614403211, guid: 321607022d986d4488fbee4f92fccc01, type: 3}
       propertyPath: m_LocalPosition.z
@@ -67883,12 +67912,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 945937287, guid: 7e7b56286216df04a98d4bc0614dda3e, type: 3}
+      propertyPath: m_text
+      value: Test
+      objectReference: {fileID: 0}
+    - target: {fileID: 945937287, guid: 7e7b56286216df04a98d4bc0614dda3e, type: 3}
       propertyPath: m_fontColor.a
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 945937287, guid: 7e7b56286216df04a98d4bc0614dda3e, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 945937287, guid: 7e7b56286216df04a98d4bc0614dda3e, type: 3}
+      propertyPath: m_overrideHtmlColors
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 945937287, guid: 7e7b56286216df04a98d4bc0614dda3e, type: 3}
+      propertyPath: m_enableVertexGradient
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1981416440319712390, guid: 7e7b56286216df04a98d4bc0614dda3e, type: 3}
       propertyPath: m_Pivot.x
@@ -67981,5 +68022,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 945937285, guid: 7e7b56286216df04a98d4bc0614dda3e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 591609227}
   m_SourcePrefab: {fileID: 100100000, guid: 7e7b56286216df04a98d4bc0614dda3e, type: 3}
