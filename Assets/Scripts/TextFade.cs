@@ -18,10 +18,11 @@ public class TextFade : MonoBehaviour
     void Update()
     {
 
-        if (alpha <= 0)
+        if (alpha <= 1)
         {
             StopCoroutine("FadeOut");
-        } else if (alpha >= 255)
+        } 
+        if (alpha >= 250)
         {
             StopCoroutine("FadeIn");
         }
