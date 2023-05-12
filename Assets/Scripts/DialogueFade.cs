@@ -2,16 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
-public class TextFade : MonoBehaviour
+public class DialogueFade : MonoBehaviour
 {
-    [SerializeField] TMP_Text textmeshPro;
+    TMP_Text dialogue;
+    [SerializeField] Image dialogueBox;
+    Button continueButton;
     byte alpha;
     public void Start()
     {
-        textmeshPro = GetComponent<TMP_Text>();
+        dialogue = GetComponentInChildren<TMP_Text>();
+        dialogueBox = GetComponent<Image>();
+        continueButton = GetComponentInChildren<Button>();
         alpha = 0;
-        textmeshPro.color = new Color32(255,255,255, alpha);
+        dialogue.color = new Color32(255,255,255, alpha);
+        dialogueBox.color = new Color32(255,255,255, alpha);
     }
 
     
@@ -32,7 +38,8 @@ public class TextFade : MonoBehaviour
     {
         for (alpha = 255; alpha >= 0; alpha--)
         {
-            textmeshPro.color = new Color32(255,255,255, alpha);
+            dialogue.color = new Color32(255,255,255, alpha);
+            dialogueBox.color = new Color32(255,255,255, alpha);
             yield return null;
         }
 
@@ -42,7 +49,8 @@ public class TextFade : MonoBehaviour
     {
         for (alpha = 0; alpha <= 255; alpha++)
         {
-            textmeshPro.color = new Color32(255,255,255, alpha);
+            dialogue.color = new Color32(255,255,255, alpha);
+            dialogueBox.color = new Color32(255,255,255, alpha);
             yield return null;
         }
     }

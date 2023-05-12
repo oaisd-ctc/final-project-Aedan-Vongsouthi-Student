@@ -143,27 +143,6 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ui_big_preview_0
-      rect:
-        serializedVersion: 2
-        x: 30
-        y: 571
-        width: 202
-        height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bfdac6e08fae4b24a9860faeac629269
-      internalID: 1130874695
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: ui_big_preview_2
       rect:
         serializedVersion: 2
@@ -256,7 +235,7 @@ TextureImporter:
         width: 40
         height: 41
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -264,6 +243,27 @@ TextureImporter:
       bones: []
       spriteID: e12d5f3d12dfb0a46b6c01a9254ec760
       internalID: -1840253999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_big_preview_0
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 622
+        width: 71
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0fc7bad14be07647aada89878424550
+      internalID: 2115769839
       vertices: []
       indices: 
       edges: []
