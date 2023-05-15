@@ -6,17 +6,20 @@ using UnityEngine.UI;
 
 public class DialogueFade : MonoBehaviour
 {
-    TMP_Text dialogue;
+    [SerializeField] TextMeshProUGUI dialogueFade;
+    [SerializeField] TextMeshProUGUI nameFade;
     [SerializeField] Image dialogueBox;
     Button continueButton;
     byte alpha;
     public void Start()
     {
-        dialogue = GetComponentInChildren<TMP_Text>();
+        dialogueFade = GetComponentInChildren<TextMeshProUGUI>();
+        nameFade = GetComponentInChildren<TextMeshProUGUI>();
         dialogueBox = GetComponent<Image>();
         continueButton = GetComponentInChildren<Button>();
         alpha = 0;
-        dialogue.color = new Color32(255,255,255, alpha);
+        dialogueFade.color = new Color32(255,255,255, alpha);
+        nameFade.color = new Color32(255,255,255, alpha);
         dialogueBox.color = new Color32(255,255,255, alpha);
     }
 
@@ -38,7 +41,8 @@ public class DialogueFade : MonoBehaviour
     {
         for (alpha = 255; alpha >= 0; alpha--)
         {
-            dialogue.color = new Color32(255,255,255, alpha);
+            dialogueFade.color = new Color32(255,255,255, alpha);
+            nameFade.color = new Color32(255,255,255, alpha);
             dialogueBox.color = new Color32(255,255,255, alpha);
             yield return null;
         }
@@ -49,7 +53,8 @@ public class DialogueFade : MonoBehaviour
     {
         for (alpha = 0; alpha <= 255; alpha++)
         {
-            dialogue.color = new Color32(255,255,255, alpha);
+            dialogueFade.color = new Color32(255,255,255, alpha);
+            nameFade.color = new Color32(255,255,255, alpha);
             dialogueBox.color = new Color32(255,255,255, alpha);
             yield return null;
         }
