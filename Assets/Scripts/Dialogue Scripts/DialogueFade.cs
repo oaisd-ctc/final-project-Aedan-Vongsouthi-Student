@@ -6,20 +6,20 @@ using UnityEngine.UI;
 
 public class DialogueFade : MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI dialogueFade;
-    [SerializeField] TextMeshProUGUI nameFade;
+    [SerializeField] TextMeshProUGUI[] fade;
     [SerializeField] Image dialogueBox;
     Button continueButton;
     byte alpha;
     public void Start()
     {
-        dialogueFade = GetComponentInChildren<TextMeshProUGUI>();
-        nameFade = GetComponentInChildren<TextMeshProUGUI>();
+        fade = GetComponentsInChildren<TextMeshProUGUI>();
         dialogueBox = GetComponent<Image>();
         continueButton = GetComponentInChildren<Button>();
         alpha = 0;
-        dialogueFade.color = new Color32(255,255,255, alpha);
-        nameFade.color = new Color32(255,255,255, alpha);
+        foreach (TextMeshProUGUI text in fade)
+        {
+            text.color = new Color32(255,255,255, alpha);
+        }
         dialogueBox.color = new Color32(255,255,255, alpha);
     }
 
@@ -41,8 +41,10 @@ public class DialogueFade : MonoBehaviour
     {
         for (alpha = 255; alpha >= 0; alpha--)
         {
-            dialogueFade.color = new Color32(255,255,255, alpha);
-            nameFade.color = new Color32(255,255,255, alpha);
+            foreach (TextMeshProUGUI text in fade)
+        {
+            text.color = new Color32(255,255,255, alpha);
+        }
             dialogueBox.color = new Color32(255,255,255, alpha);
             yield return null;
         }
@@ -53,12 +55,16 @@ public class DialogueFade : MonoBehaviour
     {
         for (alpha = 0; alpha <= 255; alpha++)
         {
-            dialogueFade.color = new Color32(255,255,255, alpha);
-            nameFade.color = new Color32(255,255,255, alpha);
+           foreach (TextMeshProUGUI text in fade)
+        {
+            text.color = new Color32(255,255,255, alpha);
+        }
             dialogueBox.color = new Color32(255,255,255, alpha);
+            Debug.Log("Fade In Running");
             yield return null;
         }
     }
+
 
     void OnTriggerEnter2D(Collider2D other) 
     {

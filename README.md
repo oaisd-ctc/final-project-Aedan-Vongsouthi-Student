@@ -12,3 +12,4 @@ _A template repo for Unity projects._
 ## Credit To...
 
 Buch for the Golden UI: https://opengameart.org/users/buch
+Adrien Coquet for Dash Icon: https://thenounproject.com/coquet_adrien/
