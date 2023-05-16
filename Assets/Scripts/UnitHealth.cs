@@ -9,12 +9,56 @@ public class UnitHealth
    int currentMaxHealth;
 
    // Properties
-   public int Health()
+   public int Health
    {
         get
-        { return currentHealth;} 
+        { 
+         return currentHealth;
+        } 
         set 
-        {currentHealth = value;}
+        {
+         currentHealth = value;
+        }
    }
 
+   public int MaxHealth
+   {
+        get
+        { 
+         return currentMaxHealth;
+        }
+        set 
+        {
+         currentMaxHealth = value;
+        }
+   }
+
+   // Constructor
+   public UnitHealth(int health, int maxHealth)
+   {
+      currentHealth = health;
+      currentMaxHealth = maxHealth;
+   }
+
+   // Methods
+   public void DamageUnit(int damageAmount)
+   {
+      if (currentHealth > 0)
+      {
+         currentHealth -= damageAmount;
+      }
+   }
+
+   public void HealUnit(int healAmount)
+   {
+      if (currentHealth < currentMaxHealth)
+      {
+         currentHealth += healAmount;
+      }
+
+      if (currentHealth > currentMaxHealth)
+      {
+         currentHealth = currentMaxHealth;
+      }
+   }
 }

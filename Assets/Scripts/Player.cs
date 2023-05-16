@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+    [SerializeField] HealthBar healthBar;
     Vector2 moveInput;
     Rigidbody2D myRigidBody;
     Animator myAnimator;
@@ -47,6 +48,30 @@ public class Player : MonoBehaviour
         } else {
             return;
         }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            PlayerTakeDamage(20);
+            Debug.Log(GameManager.gameManager.playerHealth.Health);
+        }
+        
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            PlayerHeal(10);
+            Debug.Log(GameManager.gameManager.playerHealth.Health);
+        }
+    }
+
+    private void PlayerTakeDamage(int damage)
+    {
+        GameManager.gameManager.playerHealth.DamageUnit(damage);
+        healthBar.SetHealth(GameManager.gameManager.playerHealth.Health);
+    }
+
+    private void PlayerHeal(int healing)
+    {
+        GameManager.gameManager.playerHealth.HealUnit(healing);
+        healthBar.SetHealth(GameManager.gameManager.playerHealth.Health);
     }
 
     void OnMove(InputValue value)

@@ -257,6 +257,7 @@ GameObject:
   - component: {fileID: 88130685}
   - component: {fileID: 88130687}
   - component: {fileID: 88130686}
+  - component: {fileID: 88130688}
   m_Layer: 5
   m_Name: Health Bar
   m_TagString: Untagged
@@ -322,6 +323,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 88130684}
   m_CullTransparentMesh: 1
+--- !u!114 &88130688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88130684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3b1b0dcae546bf4a81ea1f696be55e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &163075138
 GameObject:
   m_ObjectHideFlags: 0
@@ -5049,6 +5062,50 @@ RectTransform:
   m_AnchoredPosition: {x: 232.3, y: 199}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1404114216
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1404114218}
+  - component: {fileID: 1404114217}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1404114217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404114216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6932103a94924d347889cd1a6f63cb5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1404114218
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404114216}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 251.78688, y: 115.41889, z: 0.742324}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1737711480 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1561498376, guid: 7e7b56286216df04a98d4bc0614dda3e, type: 3}
@@ -68686,7 +68743,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1349613138, guid: 321607022d986d4488fbee4f92fccc01, type: 3}
       propertyPath: m_SortingLayer
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1349613138, guid: 321607022d986d4488fbee4f92fccc01, type: 3}
       propertyPath: m_SortingLayerID
@@ -68756,6 +68813,10 @@ PrefabInstance:
       propertyPath: bullet
       value: 
       objectReference: {fileID: 7986919247293689205, guid: cf993d63fd333964990c4c14d5ffc532, type: 3}
+    - target: {fileID: 6072175955983057104, guid: 321607022d986d4488fbee4f92fccc01, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 88130688}
     - target: {fileID: 7099458095614403211, guid: 321607022d986d4488fbee4f92fccc01, type: 3}
       propertyPath: m_RootOrder
       value: 4
