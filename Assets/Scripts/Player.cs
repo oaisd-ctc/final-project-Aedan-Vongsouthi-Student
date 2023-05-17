@@ -87,19 +87,19 @@ public class Player : MonoBehaviour
 
     void Run()
     {
-        bool playerHasHorizontalSpeed = Mathf.Abs(myRigidBody.velocity.x) > 0.2f;
+        bool playerHasHorizontalSpeed = Mathf.Abs(myRigidBody.velocity.x) > Mathf.Epsilon;
 
         
             Vector2 playerVelocity = new Vector2(moveInput.x * runSpeed, myRigidBody.velocity.y);
             myRigidBody.velocity = playerVelocity;
             Invoke("ReturnToDefaultSpeed", dashDuration);
 
-        // if (playerHasHorizontalSpeed)
-        // {
-        //     // myAnimator.SetBool("isRunning", true);
-        // } else {
-        //     // myAnimator.SetBool("isRunning", false);
-        // }
+        if (playerHasHorizontalSpeed)
+        {
+            myAnimator.SetBool("isRunning", true);
+        } else {
+            myAnimator.SetBool("isRunning", false);
+        }
     }
 
     void OnDash(InputValue value)
@@ -120,6 +120,7 @@ public class Player : MonoBehaviour
 
     void OnJump(InputValue value)
     {
+        bool playerHasVerticalSpeed = Mathf.Abs(myRigidBody.velocity.y) > Mathf.Epsilon;
         if (isAlive)
         {
             if (myFeetCollider.IsTouchingLayers(LayerMask.GetMask("Ground")))
@@ -128,13 +129,16 @@ public class Player : MonoBehaviour
                 {
                     myRigidBody.gravityScale = gravityScaleAtStart;
                     myRigidBody.velocity += new Vector2(0f, jumpScale);
+                    myAnimator.SetBool("isJumping", playerHasVerticalSpeed);
                 }
 
             } else if (myFeetCollider.IsTouchingLayers(LayerMask.GetMask("Water")) && myFeetCollider.IsTouchingLayers(LayerMask.GetMask("Ground")))
             {
                 myRigidBody.gravityScale = gravityScaleAtStart;
                 myRigidBody.velocity += new Vector2(0f, (jumpScale * 100));
+                myAnimator.SetBool("isJumping", playerHasVerticalSpeed);
             } else {
+                myAnimator.SetBool("isJumping", false);
                 return;
             }
         } else {
@@ -161,10 +165,10 @@ public class Player : MonoBehaviour
             Vector2 climbingVelocity = new Vector2(myRigidBody.velocity.x, moveInput.y * climbScale);
             myRigidBody.velocity = climbingVelocity;
             myRigidBody.gravityScale = 0f;
-            // myAnimator.SetBool("isClimbing", playerHasVerticalSpeed);
+            myAnimator.SetBool("isClimbing", playerHasVerticalSpeed);
         } else {
             myRigidBody.gravityScale = gravityScaleAtStart;
-            // myAnimator.SetBool("isClimbing", false);
+            myAnimator.SetBool("isClimbing", false);
             return;
         }
     }
