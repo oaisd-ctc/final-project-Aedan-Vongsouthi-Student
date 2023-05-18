@@ -16,7 +16,7 @@ TagManager:
   - Bullet
   - Background
   - NPC
-  - 
+  - Enemy
   - 
   - 
   - 
@@ -52,4 +52,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 3116641507
+    locked: 0
+  - name: Enemy
+    uniqueID: 3450603179
     locked: 0
