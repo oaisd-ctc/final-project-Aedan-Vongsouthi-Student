@@ -184,13 +184,11 @@ public class Player : MonoBehaviour
 
         if(myFeetCollider.IsTouchingLayers(LayerMask.GetMask("Ladder")))
         {
-            Debug.Log("IsOnLAdder");
             Vector2 climbingVelocity = new Vector2(myRigidBody.velocity.x, moveInput.y * climbScale);
             myRigidBody.velocity = climbingVelocity;
             myRigidBody.gravityScale = 0f;
             //myAnimator.SetBool("isClimbing", playerHasVerticalSpeed);
         } else {
-            Debug.Log("Hitting else");
             myRigidBody.gravityScale = gravityScaleAtStart;
             //myAnimator.SetBool("isClimbing", false);
             return;

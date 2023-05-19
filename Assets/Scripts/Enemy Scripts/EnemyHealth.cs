@@ -27,6 +27,7 @@ public class EnemyHealth : MonoBehaviour
     void Die()
     {
         FindObjectOfType<AudioManager>().Play("enemyDeath");
+        FindObjectOfType<GameSession>().PointIncrease(100);
 
         animator.SetBool("isDead", true);
 

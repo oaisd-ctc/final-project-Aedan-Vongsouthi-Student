@@ -87,7 +87,7 @@ public class EnemyAI : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            player.PlayerTakeDamage(enemyDamage);
+            FindObjectOfType<Player>().PlayerTakeDamage(enemyDamage);
             Debug.Log(GameManager.gameManager.playerHealth.Health);
         }
     }
