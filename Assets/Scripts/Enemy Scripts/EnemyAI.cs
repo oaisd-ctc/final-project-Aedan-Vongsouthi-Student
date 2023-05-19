@@ -6,6 +6,9 @@ using System;
 
 public class EnemyAI : MonoBehaviour
 {
+    public Player player;
+    public int enemyDamage;
+    public int enemyKnockback;
     public Transform target;
     public float speed = 200f;
     public float nextWaypointDistance = 3f;
@@ -16,21 +19,21 @@ public class EnemyAI : MonoBehaviour
     bool reachedEndOfPath = false;
 
     Seeker seeker;
-    Rigidbody2D rb;
+    public Rigidbody2D enemyRB;
     void Start()
     {
         seeker = GetComponent<Seeker>();
-        rb = GetComponent<Rigidbody2D>();
+        enemyRB = GetComponent<Rigidbody2D>();
         
         InvokeRepeating("UpdatePath", 0f, .5f);
-        seeker.StartPath(rb.position, target.position, OnPathComplete);
+        seeker.StartPath(enemyRB.position, target.position, OnPathComplete);
     }
 
     void UpdatePath()
     {
         if (seeker.IsDone())
         {
-            seeker.StartPath(rb.position, target.position, OnPathComplete);
+            seeker.StartPath(enemyRB.position, target.position, OnPathComplete);
         }
         
     }
@@ -60,23 +63,32 @@ public class EnemyAI : MonoBehaviour
             reachedEndOfPath = false;
         }
 
-        Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
+        Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - enemyRB.position).normalized;
         Vector2 force = direction * speed * Time.deltaTime;
 
-        rb.AddForce(force);
+        enemyRB.AddForce(force);
 
-        float distance = Vector2.Distance(rb.position, path.vectorPath[currentWaypoint]);
+        float distance = Vector2.Distance(enemyRB.position, path.vectorPath[currentWaypoint]);
 
         if (distance < nextWaypointDistance)
         {
             currentWaypoint++;
         }
 
-        if (rb.velocity.x >= Mathf.Epsilon)
+        if (enemyRB.velocity.x >= Mathf.Epsilon)
         {
             transform.localScale = new Vector3(-1f, 1f, 1f);
-        } else if (rb.velocity.x <= -Mathf.Epsilon) {
+        } else if (enemyRB.velocity.x <= -Mathf.Epsilon) {
             transform.localScale = new Vector3(1f, 1f, 1f);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D other) 
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            player.PlayerTakeDamage(enemyDamage);
+            Debug.Log(GameManager.gameManager.playerHealth.Health);
         }
     }
 }

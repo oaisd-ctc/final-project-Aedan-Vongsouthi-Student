@@ -60,7 +60,6 @@ public class DialogueFade : MonoBehaviour
             text.color = new Color32(255,255,255, alpha);
         }
             dialogueBox.color = new Color32(255,255,255, alpha);
-            Debug.Log("Fade In Running");
             yield return null;
         }
     }

@@ -32,9 +32,10 @@ public class GameSession : MonoBehaviour
 
    public void ProcessPlayerDeath()
    {
-       if (playerLives > 1)
+       if (GameManager.gameManager.playerHealth.Health == 0)
        {
-            TakeLife();
+            int currentLevel = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene(currentLevel + 1);
        } else {
             ResetGameSession();
        }

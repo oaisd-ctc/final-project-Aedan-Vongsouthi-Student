@@ -6,9 +6,19 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+    EnemyAI enemyAI;
+    public AudioManager audioManager;
+    public Transform attackPoint;
+    public float attackRange = .5f;
+    public LayerMask enemyLayer;
+    public int attackDamage = 40;
+    public float attackRate = 2f;
+    float nextAttackTime = 0f;
+    public int playerKnockback;
+
     [SerializeField] HealthBar healthBar;
     Vector2 moveInput;
-    Rigidbody2D myRigidBody;
+    public Rigidbody2D myRigidBody;
     Animator myAnimator;
     CapsuleCollider2D myBodyCollider;
     BoxCollider2D myFeetCollider;
@@ -33,12 +43,20 @@ public class Player : MonoBehaviour
         myAnimator = GetComponent<Animator>();
         myBodyCollider = GetComponent<CapsuleCollider2D>();
         myFeetCollider = GetComponent<BoxCollider2D>();
+        enemyAI = GetComponent<EnemyAI>();
+        audioManager = GetComponent<AudioManager>();
         gravityScaleAtStart = myRigidBody.gravityScale;
         runSpeed = defaultRunSpeed;
     }
 
     void Update()
     {
+    if (GameManager.gameManager.playerHealth.Health == 0)
+       {
+            int currentLevel = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene(currentLevel + 1);
+       }
+
         if (isAlive)
         {
             Run();
@@ -49,20 +67,9 @@ public class Player : MonoBehaviour
             return;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            PlayerTakeDamage(20);
-            Debug.Log(GameManager.gameManager.playerHealth.Health);
-        }
-        
-        if (Input.GetKeyDown(KeyCode.LeftShift))
-        {
-            PlayerHeal(10);
-            Debug.Log(GameManager.gameManager.playerHealth.Health);
-        }
     }
 
-    private void PlayerTakeDamage(int damage)
+    public void PlayerTakeDamage(int damage)
     {
         GameManager.gameManager.playerHealth.DamageUnit(damage);
         healthBar.SetHealth(GameManager.gameManager.playerHealth.Health);
@@ -72,6 +79,22 @@ public class Player : MonoBehaviour
     {
         GameManager.gameManager.playerHealth.HealUnit(healing);
         healthBar.SetHealth(GameManager.gameManager.playerHealth.Health);
+    }
+
+    void OnFire(InputValue value)
+    {
+        if (Time.time >= nextAttackTime)
+        {
+            myAnimator.SetTrigger("Attack");
+            FindObjectOfType<AudioManager>().Play("SwordSlash");
+            Collider2D[] hitenemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayer);
+            foreach (Collider2D enemy in hitenemies)
+            {
+                enemy.GetComponent<EnemyHealth>().EnemyTakeDamage(attackDamage);
+            }
+
+            nextAttackTime = Time.time + 1f / attackRate;
+        }
     }
 
     void OnMove(InputValue value)
@@ -108,13 +131,14 @@ public class Player : MonoBehaviour
         {
             runSpeed = dashSpeed;
             dashStart = Time.time;
+            myAnimator.SetBool("isDashing", true);
         }
     }
 
     void ReturnToDefaultSpeed()
     {
         runSpeed = defaultRunSpeed;
-
+        myAnimator.SetBool("isDashing", false);
         CancelInvoke("ReturnToDefaultSpeed");
     }
 
@@ -165,10 +189,10 @@ public class Player : MonoBehaviour
             Vector2 climbingVelocity = new Vector2(myRigidBody.velocity.x, moveInput.y * climbScale);
             myRigidBody.velocity = climbingVelocity;
             myRigidBody.gravityScale = 0f;
-            myAnimator.SetBool("isClimbing", playerHasVerticalSpeed);
+            //myAnimator.SetBool("isClimbing", playerHasVerticalSpeed);
         } else {
             myRigidBody.gravityScale = gravityScaleAtStart;
-            myAnimator.SetBool("isClimbing", false);
+            //myAnimator.SetBool("isClimbing", false);
             return;
         }
     }
@@ -189,4 +213,14 @@ public class Player : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
+    void OnDrawGizmosSelected() 
+    {
+        if (attackPoint == null)
+        {
+            return;
+        }
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+    }
+
 }
