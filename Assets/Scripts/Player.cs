@@ -209,7 +209,7 @@ public class Player : MonoBehaviour
 
     void OnReloadScene()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
     }
 
     void OnDrawGizmosSelected() 
