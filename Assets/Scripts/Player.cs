@@ -57,15 +57,13 @@ public class Player : MonoBehaviour
             SceneManager.LoadScene(currentLevel + 1);
        }
 
-        if (isAlive)
-        {
+        
+        
             Run();
             FlipSprite();
             ClimbLadder();
             PlayerDeath();
-        } else {
-            return;
-        }
+    
 
     }
 
@@ -184,13 +182,15 @@ public class Player : MonoBehaviour
     {
         bool playerHasVerticalSpeed = Mathf.Abs(myRigidBody.velocity.y) > Mathf.Epsilon;
 
-        if(myFeetCollider.IsTouchingLayers(LayerMask.GetMask("Climbing")))
+        if(myFeetCollider.IsTouchingLayers(LayerMask.GetMask("Ladder")))
         {
+            Debug.Log("IsOnLAdder");
             Vector2 climbingVelocity = new Vector2(myRigidBody.velocity.x, moveInput.y * climbScale);
             myRigidBody.velocity = climbingVelocity;
             myRigidBody.gravityScale = 0f;
             //myAnimator.SetBool("isClimbing", playerHasVerticalSpeed);
         } else {
+            Debug.Log("Hitting else");
             myRigidBody.gravityScale = gravityScaleAtStart;
             //myAnimator.SetBool("isClimbing", false);
             return;
