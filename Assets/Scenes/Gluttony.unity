@@ -523,11 +523,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3216761964994147496, guid: 46c20f280e18b0c4e8963af86eb8d04d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.028343
+      value: -10.028298
       objectReference: {fileID: 0}
     - target: {fileID: 3216761964994147496, guid: 46c20f280e18b0c4e8963af86eb8d04d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.3699659
+      value: 0.37956655
       objectReference: {fileID: 0}
     - target: {fileID: 3216761964994147498, guid: 46c20f280e18b0c4e8963af86eb8d04d, type: 3}
       propertyPath: m_Volume
@@ -1148,7 +1148,7 @@ CompositeCollider2D:
   m_GameObject: {fileID: 608889341}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: b9f460729dc34514d90f465107477580, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -6710,7 +6710,7 @@ CompositeCollider2D:
   m_GameObject: {fileID: 1214016522}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: b9f460729dc34514d90f465107477580, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0

@@ -27947,7 +27947,7 @@ CompositeCollider2D:
   m_GameObject: {fileID: 1052346510}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: b9f460729dc34514d90f465107477580, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
