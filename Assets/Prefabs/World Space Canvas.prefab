@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1841415845}
   - component: {fileID: 1841415846}
+  - component: {fileID: 5747617004976172355}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -44,8 +45,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10b89524ae5aa5745bb758cf2850df49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: {fileID: 0}
+  nameText: {fileID: 4704481557025206380}
   dialogueText: {fileID: 1561498376}
+--- !u!114 &5747617004976172355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841415844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e73575d20ee9a72419653aabaa059db7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fade: []
+  dialogueBox: {fileID: 0}
 --- !u!1 &8050357000803767378
 GameObject:
   m_ObjectHideFlags: 0
@@ -80,7 +95,7 @@ RectTransform:
   - {fileID: 1841415845}
   - {fileID: 2123423889}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -157,6 +172,48 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1981416440319712390}
     m_Modifications:
+    - target: {fileID: 1754857341, guid: 098b29bf44e349f47a4580c28fa808ed, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754857341, guid: 098b29bf44e349f47a4580c28fa808ed, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: This wall is too high to traverse. In order to get over it, you will
+        need to utilize a ladder.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754857341, guid: 098b29bf44e349f47a4580c28fa808ed, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: In front of us is a ladder...
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754857341, guid: 098b29bf44e349f47a4580c28fa808ed, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: I hope you knew that. If not, I beckon you to turn back.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754857341, guid: 098b29bf44e349f47a4580c28fa808ed, type: 3}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: Simply press W when at the ladder to move up it. Keep in mind though,
+        when climbing, you have limited movement.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754857341, guid: 098b29bf44e349f47a4580c28fa808ed, type: 3}
+      propertyPath: dialogue.sentences.Array.data[4]
+      value: This means you can't jump, so take caution when climbing!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754857341, guid: 098b29bf44e349f47a4580c28fa808ed, type: 3}
+      propertyPath: dialogue.sentences.Array.data[5]
+      value: Many have tried this journey. All have failed. Instead of living an
+        aimless life here in Limbo, they are being burned alive for the entertainment
+        of the Demon King.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754857341, guid: 098b29bf44e349f47a4580c28fa808ed, type: 3}
+      propertyPath: dialogue.sentences.Array.data[6]
+      value: I know for a fact that it would be for naught if I tried to stop you,
+        so my only option is to help you. After all, you are trying to take down
+        the Devil. Seems like a sin that God can forgive.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754857341, guid: 098b29bf44e349f47a4580c28fa808ed, type: 3}
+      propertyPath: dialogue.sentences.Array.data[7]
+      value: Anyway, go on ahead. I'll teach you how things work around here.
+      objectReference: {fileID: 0}
     - target: {fileID: 185600501057332816, guid: 098b29bf44e349f47a4580c28fa808ed, type: 3}
       propertyPath: m_Name
       value: Dialogue Box
@@ -245,21 +302,64 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 185600501535626694, guid: 098b29bf44e349f47a4580c28fa808ed, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 105
+      objectReference: {fileID: 0}
+    - target: {fileID: 185600501535626694, guid: 098b29bf44e349f47a4580c28fa808ed, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 20.6
+      objectReference: {fileID: 0}
     - target: {fileID: 185600501535626695, guid: 098b29bf44e349f47a4580c28fa808ed, type: 3}
       propertyPath: dialogueFade
       value: 
       objectReference: {fileID: 1561498376}
+    - target: {fileID: 185600501535626696, guid: 098b29bf44e349f47a4580c28fa808ed, type: 3}
+      propertyPath: m_fontSize
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 185600501535626696, guid: 098b29bf44e349f47a4580c28fa808ed, type: 3}
+      propertyPath: m_margin.z
+      value: 137.65794
+      objectReference: {fileID: 0}
+    - target: {fileID: 185600501535626696, guid: 098b29bf44e349f47a4580c28fa808ed, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 185600502128667657, guid: 098b29bf44e349f47a4580c28fa808ed, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1841415846}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    - target: {fileID: 4889448634181351084, guid: 098b29bf44e349f47a4580c28fa808ed, type: 3}
+      propertyPath: m_fontSize
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4889448634181351084, guid: 098b29bf44e349f47a4580c28fa808ed, type: 3}
+      propertyPath: m_margin.w
+      value: 26.762875
+      objectReference: {fileID: 0}
+    - target: {fileID: 4889448634181351084, guid: 098b29bf44e349f47a4580c28fa808ed, type: 3}
+      propertyPath: m_margin.z
+      value: 115.16148
+      objectReference: {fileID: 0}
+    - target: {fileID: 4889448634181351084, guid: 098b29bf44e349f47a4580c28fa808ed, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4889448634181351084, guid: 098b29bf44e349f47a4580c28fa808ed, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4889448634181351084, guid: 098b29bf44e349f47a4580c28fa808ed, type: 3}
+      propertyPath: m_overrideHtmlColors
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 185600501535626695, guid: 098b29bf44e349f47a4580c28fa808ed, type: 3}
+    m_RemovedGameObjects:
+    - {fileID: 185600501349935937, guid: 098b29bf44e349f47a4580c28fa808ed, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2335191238178275997, guid: 098b29bf44e349f47a4580c28fa808ed, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8637292917106320491}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 098b29bf44e349f47a4580c28fa808ed, type: 3}
 --- !u!114 &1561498376 stripped
 MonoBehaviour:
@@ -277,23 +377,14 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 185600501057332817, guid: 098b29bf44e349f47a4580c28fa808ed, type: 3}
   m_PrefabInstance: {fileID: 185600502157330112}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2520650899760628829 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2335191238178275997, guid: 098b29bf44e349f47a4580c28fa808ed, type: 3}
+--- !u!114 &4704481557025206380 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4889448634181351084, guid: 098b29bf44e349f47a4580c28fa808ed, type: 3}
   m_PrefabInstance: {fileID: 185600502157330112}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8637292917106320491
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2520650899760628829}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e73575d20ee9a72419653aabaa059db7, type: 3}
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueFade: {fileID: 0}
-  nameFade: {fileID: 0}
-  dialogueBox: {fileID: 0}

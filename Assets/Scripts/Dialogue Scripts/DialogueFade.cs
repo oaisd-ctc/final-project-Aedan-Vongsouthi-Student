@@ -77,6 +77,7 @@ public class DialogueFade : MonoBehaviour
     {
         if (other.tag == "Player")
         {
+            this.transform.parent.gameObject.SetActive(false);
             StartCoroutine("FadeOut");
         }
     }

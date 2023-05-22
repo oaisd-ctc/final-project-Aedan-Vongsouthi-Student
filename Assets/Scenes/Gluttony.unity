@@ -397,6 +397,10 @@ PrefabInstance:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 914867709}
+    - target: {fileID: 2703233954291241837, guid: d4e8ce61789cb76449b42ace3c5aab21, type: 3}
+      propertyPath: data.dataString
+      value: UEsDBBQAAAgIAACYn+up4MYVdgIAAC0FAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVMty4jAQ/BVK54UyBhu8t10gZA8kVMhWLr4IeYxVyJJLDx5J8e8ryTZ22BOiex49rZG/EOWqAqKFXEuabUQG6OcAuTP6MejIZ7jgg+A7+gltzAfNdOGCsI95w5oKi49dmhIlaEnJL35gLjiwoOE0F7JcZQdYCKWVhXPMFFhKCu2yuYW+Buhif4aJS7naUzhzp097SoLBzR4JcA2yCx3PRkE8S6aTuMmIRmEync6iJi0cxfMwDJLVMJj5AoYThssKMjdNVyeetB0jH8btnE2Em4kIxqhqRCJ9rbwJu6oACc6FjGI7sxfmwgugh0K7av3c1zxXoBtDJL4uqbTW1UXRb1H7WWJ1rGWdMDO+fzj3kuqim//44djTuRTlc9t3HLgeuqDk+IavBCvdM7wPL78LN/yM2RHvGXwUwF/EWgrDM0tqaVyqURAuu7/30RYFkGOH11IfQFN1drf3296um+Hmp78sGC33jhpNa2DHhLfbLwVIezF/rGC/MqopYVGn4q+Cd3zo71ZDPFGptKWaKbmTtxdGulC08p65aYxeCMnBw43oCjhm+rq1ZfTjFT5wvbYPzBN2r6hp3nDt43hI8XAXHwQP1Fac75elCnHegCpejWaUQyfaES/Wp4XgvN6wvidt2s7IHJNe2sHQ7PtqoWQaxnMS5ZMoxEkU5UMyiSf78T6YxTAnwRwjv3uU2zkx29ZCG3vsrfGuOLd71n5cBmuJK7/tmcTnNf0sRV8g5bnYEQnAX+sSd+UgbRf7KrNVRq1DO9Cacn/h6CtFTJAjZOm9Z+pHXV20xGlXJUUVPQntkBQt/OckRQ6+L/NWwonC2TVvi93Q7R9QSwMEFAAACAgAAJif61Ugn+xtAAAAeAAAAAkAJABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGrVipLLSrOzM9TslIw0TPSMzTXUVBKL0osyCgGihiCOKWZKSB2tJKliZGZRbJpmrGpUaKlqWmabrKxmXGSYZKBuVmqRbKBRaJSLFB9SWVBql9ibipET0BiSUZaZl5KZl66nntRZoo7yGil2FoAUEsBAi0AFAAACAgAAJif66ngxhV2AgAALQUAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAAJif61Ugn+xtAAAAeAAAAAkAJAAAAAAAAAAAAAAAwwIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAAB7AwAAAAA=
+      objectReference: {fileID: 0}
     - target: {fileID: 2703233955902932164, guid: d4e8ce61789cb76449b42ace3c5aab21, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -519,11 +523,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3216761964994147496, guid: 46c20f280e18b0c4e8963af86eb8d04d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.028328
+      value: -10.028343
       objectReference: {fileID: 0}
     - target: {fileID: 3216761964994147496, guid: 46c20f280e18b0c4e8963af86eb8d04d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.37322032
+      value: 0.3699659
       objectReference: {fileID: 0}
     - target: {fileID: 3216761964994147498, guid: 46c20f280e18b0c4e8963af86eb8d04d, type: 3}
       propertyPath: m_Volume

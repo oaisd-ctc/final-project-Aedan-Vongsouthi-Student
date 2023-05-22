@@ -108,7 +108,7 @@ public class Player : MonoBehaviour
 
     void Run()
     {
-        bool playerHasHorizontalSpeed = Mathf.Abs(myRigidBody.velocity.x) > Mathf.Epsilon;
+        bool playerHasHorizontalSpeed = Mathf.Abs(myRigidBody.velocity.x) > 0.3f;
 
         
             Vector2 playerVelocity = new Vector2(moveInput.x * runSpeed, myRigidBody.velocity.y);
@@ -207,7 +207,7 @@ public class Player : MonoBehaviour
 
     }
 
-    void OnReloadScene()
+    void OnLoadNextScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
     }
