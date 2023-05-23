@@ -91318,11 +91318,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 185600500687714749, guid: 7e7b56286216df04a98d4bc0614dda3e, type: 3}
       propertyPath: dialogue.sentences.Array.size
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 185600500687714749, guid: 7e7b56286216df04a98d4bc0614dda3e, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: So, you defy the judgement of our lord and deem yourself wronged of
+      value: So, you defy the judgement of our Lord and deem yourself wronged of
         being in this place?
       objectReference: {fileID: 0}
     - target: {fileID: 185600500687714749, guid: 7e7b56286216df04a98d4bc0614dda3e, type: 3}
@@ -91343,23 +91343,27 @@ PrefabInstance:
     - target: {fileID: 185600500687714749, guid: 7e7b56286216df04a98d4bc0614dda3e, type: 3}
       propertyPath: dialogue.sentences.Array.data[4]
       value: I assume you heard about it, didn't you? The door on the lowest floor
-        of Hell. The Doors of Death. The exit that Satan Himself uses to leave his
-        realm. You believe that you can make to it and defeat Satan.
+        of Hell. The Doors of Death.
       objectReference: {fileID: 0}
     - target: {fileID: 185600500687714749, guid: 7e7b56286216df04a98d4bc0614dda3e, type: 3}
       propertyPath: dialogue.sentences.Array.data[5]
+      value: The exit that Satan Himself uses to leave His realm. You believe that
+        you can make to it and defeat Satan.
+      objectReference: {fileID: 0}
+    - target: {fileID: 185600500687714749, guid: 7e7b56286216df04a98d4bc0614dda3e, type: 3}
+      propertyPath: dialogue.sentences.Array.data[6]
       value: Many have tried this journey. All have failed. Instead of living an
         aimless life here in Limbo, they are being burned alive for the entertainment
         of the Demon King.
       objectReference: {fileID: 0}
     - target: {fileID: 185600500687714749, guid: 7e7b56286216df04a98d4bc0614dda3e, type: 3}
-      propertyPath: dialogue.sentences.Array.data[6]
+      propertyPath: dialogue.sentences.Array.data[7]
       value: I know for a fact that it would be for naught if I tried to stop you,
         so my only option is to help you. After all, you are trying to take down
         the Devil. Seems like a sin that God can forgive.
       objectReference: {fileID: 0}
     - target: {fileID: 185600500687714749, guid: 7e7b56286216df04a98d4bc0614dda3e, type: 3}
-      propertyPath: dialogue.sentences.Array.data[7]
+      propertyPath: dialogue.sentences.Array.data[8]
       value: Anyway, go on ahead. I'll teach you how things work around here.
       objectReference: {fileID: 0}
     - target: {fileID: 1981416440319712390, guid: 7e7b56286216df04a98d4bc0614dda3e, type: 3}
