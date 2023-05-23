@@ -204,7 +204,7 @@ Transform:
   - {fileID: 1006397524}
   - {fileID: 1349613137}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6072175955983057104
 MonoBehaviour:
@@ -220,7 +220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioManager: {fileID: 0}
   attackPoint: {fileID: 1006397524}
-  attackRange: 0.8
+  attackRange: 1
   enemyLayer:
     serializedVersion: 2
     m_Bits: 2048
@@ -356,7 +356,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.06363106, y: -0.88169986}
+  m_Offset: {x: 0.07963252, y: -0.88169986}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -367,7 +367,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.69755936, y: 0.25170743}
+  m_Size: {x: 0.5695472, y: 0.25170743}
   m_EdgeRadius: 0
 --- !u!50 &6255520395523946943
 Rigidbody2D:
